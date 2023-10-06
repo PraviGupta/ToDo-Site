@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #72b4c4;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+button[type="submit"] {
+    grid-column: span 4;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+    background-color: #249129;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.deleteButton {
+    background-color: #ff0000;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.taskCategory {
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.taskDate {
+    padding-right: 10px;
+}
+
+.taskPriority {
+    padding-right: 10px;
+}
